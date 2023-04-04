@@ -1,0 +1,15 @@
+<table *ngIf="characters">
+    <tr *ngFor="let character of characters">
+        <a (click)="viewCharacter(character)">
+            <td>{{character.name}}</td>
+        </a>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" (click)="previous()">Previous</button>
+        </td>
+        <td>
+            <button type="button" (click)="next()">Next</button>
+        </td>
+    </tr>
+</table>
